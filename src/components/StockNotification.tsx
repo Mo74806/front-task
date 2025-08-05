@@ -25,7 +25,7 @@ function StockNotification() {
   return (
     <>
       <button
-        className="p-2 w-full text-start bg-yellow-100 border border-yellow-300 rounded-lg relative hover:bg-yellow-200 transition-colors"
+        className="p-2 cursor-pointer w-full text-start bg-yellow-100 border border-yellow-300 rounded-lg relative hover:bg-yellow-200 transition-colors"
         onClick={() => setShowPopup(true)}
       >
         Stock Alerts
@@ -46,7 +46,7 @@ function StockNotification() {
             <div className="bg-white rounded-xl shadow-xl border border-gray-200 w-full max-w-md p-4">
               <div className="flex mb-4 border-b">
                 <button
-                  className={`flex-1 py-2 text-sm font-medium border-b-2 ${
+                  className={`cursor-pointer flex-1 py-2 text-sm font-medium border-b-2 ${
                     activeTab === "low"
                       ? "border-yellow-500 text-yellow-600"
                       : "border-transparent text-gray-500"
@@ -56,7 +56,7 @@ function StockNotification() {
                   Low Stock
                 </button>
                 <button
-                  className={`flex-1 py-2 text-sm font-medium border-b-2 ${
+                  className={`cursor-pointer flex-1 py-2 text-sm font-medium border-b-2 ${
                     activeTab === "out"
                       ? "border-red-500 text-red-600"
                       : "border-transparent text-gray-500"
@@ -94,7 +94,7 @@ function StockNotification() {
               )}
 
               <button
-                className="mt-4 w-full text-sm text-red-500 border border-red-500 px-3 py-2 rounded-lg hover:bg-red-500 hover:text-white transition-colors"
+                className="cursor-pointer mt-4 w-full text-sm text-red-500 border border-red-500 px-3 py-2 rounded-lg hover:bg-red-500 hover:text-white transition-colors"
                 onClick={() => setShowPopup(false)}
               >
                 Close

@@ -37,7 +37,7 @@ function ProductCard({ product }: { product: Product }) {
         <button
           onClick={() => updateStock(product)}
           disabled={currentStock <= 0}
-          className="mt-3 w-full sm:w-fit py-2 px-4 rounded-lg font-medium text-white bg-indigo-500 hover:bg-indigo-600 disabled:bg-gray-400 transition-colors"
+          className="cursor-pointer mt-3 w-full sm:w-fit py-2 px-4 rounded-lg font-medium text-white bg-indigo-500 hover:bg-indigo-600 disabled:bg-gray-400 transition-colors"
         >
           Decrease Stock
         </button>
