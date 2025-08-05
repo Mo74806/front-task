@@ -1,9 +1,3 @@
-# SideUp Inventory Dashboard
-
-## Live Demo
-
-[View Live App]()
-
 ## Installation
 
 Clone the repository and install dependencies:
@@ -33,5 +27,3 @@ This project uses **React Query** for data fetching and caching. All API data (c
 ## Efficient List Rendering
 
 Product lists are rendered using **react-virtuoso**, a performant virtual list component. This allows the dashboard to efficiently display large numbers of products with smooth scrolling and infinite loading.
-
----
