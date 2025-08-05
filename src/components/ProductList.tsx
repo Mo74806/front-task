@@ -21,6 +21,13 @@ function ProductList({
     }
   }, [resetTrigger]);
 
+  if (!products || products.length === 0) {
+    return (
+      <div className="flex items-center justify-center h-[90vh] text-gray-500 text-lg">
+        Loading products...
+      </div>
+    );
+  }
   return (
     <Virtuoso
       ref={virtuosoRef}

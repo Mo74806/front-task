@@ -48,7 +48,9 @@ function Sidebar({
 
       <aside
         ref={sidebarRef}
-        className={`fixed md:static top-0 left-0 h-full md:h-auto w-56 bg-white/90 backdrop-blur-md border-r border-gray-200 p-4 
+        className={`${
+          categories.length === 0 && "hidden"
+        } fixed md:static top-0 left-0 h-full md:h-auto w-56 bg-white/90 backdrop-blur-md border-r border-gray-200 p-4 
           transform transition-transform duration-300 shadow-lg z-50
           ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
       >
