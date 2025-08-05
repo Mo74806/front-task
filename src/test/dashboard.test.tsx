@@ -1,7 +1,7 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { InventoryProvider } from "../context/InventoryContenxt";
-import { describe, expect, it, vi, beforeEach } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import Dashboard from "../pages/Dashbord";
 
 vi.mock("../services/categoryServices", () => ({

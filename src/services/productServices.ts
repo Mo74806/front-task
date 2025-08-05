@@ -1,4 +1,4 @@
-import type { Product } from "../types/product";
+import type { Product } from "../types/Product";
 import { QueryClient } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();

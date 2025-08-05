@@ -1,7 +1,8 @@
 import React, { createContext, useState, useCallback } from "react";
 
 import { useQueryClient } from "@tanstack/react-query";
-import type { Product } from "../types/product";
+import type { Product } from "../types/Product";
+// import type { Product } from "../types/Product";
 
 interface InventoryContextValue {
   lowStockItems: Product[];

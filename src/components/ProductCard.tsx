@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import React from "react";
 import { InventoryContext } from "../context/InventoryContenxt";
-import type { Product } from "../types/product";
+import type { Product } from "../types/Product";
 
 function ProductCard({ product }: { product: Product }) {
   const inventory = useContext(InventoryContext);

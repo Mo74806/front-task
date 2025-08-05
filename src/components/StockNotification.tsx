@@ -1,7 +1,7 @@
 import { useState, useContext, memo } from "react";
 import { createPortal } from "react-dom";
 import { InventoryContext } from "../context/InventoryContenxt";
-import type { Product } from "../types/product";
+import type { Product } from "../types/Product";
 
 function StockNotification() {
   const [showPopup, setShowPopup] = useState(false);

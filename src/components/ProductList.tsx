@@ -1,6 +1,6 @@
 import { Virtuoso } from "react-virtuoso";
 import ProductCard from "./ProductCard";
-import type { Product } from "../types/product";
+import type { Product } from "../types/Product";
 import { useRef, useEffect, memo } from "react";
 
 function ProductList({
